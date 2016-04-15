@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="Modeli.User" table="Users">  
+    <id name="id" type="int">
+        <column name="id" />
+        <generator class="increment" />
+    </id>
+   
+    <property name="firstName"></property>  
+    <property name="lastName"></property>  
+    <property name="email"></property>  
+    <property name="password"></property>  
+    <property name="gender"></property>  
+    <property name="birthday"></property>  
+    <property name="location"></property>  
+    <property name="phone_num"></property>  
+            
+  </class>  
+                   
+ </hibernate-mapping>  
